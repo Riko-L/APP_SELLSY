@@ -9,23 +9,23 @@ package com.sellsy.apientities;
  */
 public class Pagination {
     
-    private int nberpage=10;
+    private int nbperpage=5;
     private int pagenum=1;
     
     
-    public Pagination(int nberpage, int pagenum) {
-        this.nberpage = nberpage;
+    public Pagination( int pagenum ,int nbperpage) {
+        this.nbperpage = nbperpage;
         this.pagenum = pagenum;
     }
 
 
-    public int getNberpage() {
-        return nberpage;
+    public int getNbperpage() {
+        return nbperpage;
     }
 
 
-    public void setNberpage(int nberpage) {
-        this.nberpage = nberpage;
+    public void setNbperpage(int nbperpage) {
+        this.nbperpage = nbperpage;
     }
 
 
@@ -39,10 +39,10 @@ public class Pagination {
     }
 
 
-    @Override
-    public String toString() {
-        return "Pagination [nberpage=" + nberpage + ", pagenum=" + pagenum + "]";
-    }
+//    @Override
+//    public String toString() {
+//        return "Pagination [nbperpage=" + nbperpage + ", pagenum=" + pagenum + "]";
+//   }
     
     
 

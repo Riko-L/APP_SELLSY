@@ -10,25 +10,25 @@ package com.sellsy.apientities;
 public class SearchFilter {
     
     private String contains;
-    private Long birthdate;
+    private String type;
 
     /**
      * 
      */
     public SearchFilter() {
        this.contains="";
-       this.birthdate=null;
+       this.type="";
        
     }
 
-    public SearchFilter(String contains) {
-        this.birthdate=null;
-        this.contains = contains;
+    public SearchFilter(String type) {
+        this.type= type;
+        this.contains = "";
     }
 
-    public SearchFilter(String contains, Long birthdate) {
+    public SearchFilter(String contains, String type) {
         this.contains = contains;
-        this.birthdate = birthdate;
+        this.type = type;
     }
 
     public String getContains() {
@@ -39,12 +39,12 @@ public class SearchFilter {
         this.contains = contains;
     }
 
-    public Long getBirthdate() {
-        return birthdate;
+    public String getType() {
+        return type;
     }
 
-    public void setBirthdate(Long birthdate) {
-        this.birthdate = birthdate;
+    public void setType(String type) {
+        this.type = type;
     }
 
     

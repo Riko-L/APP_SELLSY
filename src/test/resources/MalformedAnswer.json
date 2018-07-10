@@ -1,6 +1,11 @@
  {
-        "infos":{
-            "nbperpage":10,
-            "nbpages":1,
-            "pagenum":1,
- 
+	"infos": {
+		"nbperpage": 10,
+		"nbpages": 1,
+		"pagenum": {
+			"nbperpage": 10,
+			"nbpages": 1,
+			"pagenum": 1
+		}
+	}
+}
